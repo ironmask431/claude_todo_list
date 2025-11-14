@@ -19,6 +19,10 @@ class Todo(
     @Column(nullable = false)
     var isDone: Boolean = false,
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    var user: User,
+
     @Column(nullable = false, updatable = false)
     val createdAt: LocalDateTime = LocalDateTime.now(),
 

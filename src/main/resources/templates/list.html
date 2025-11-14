@@ -27,20 +27,59 @@
             padding: 30px;
         }
         
+        .user-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .user-nickname {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .welcome-text {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+
         h1 {
             color: #333;
             margin-bottom: 30px;
             text-align: center;
             font-size: 2.5em;
         }
-        
+
         .header-actions {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 30px;
         }
-        
+
         .btn {
             padding: 12px 24px;
             border: none;
@@ -51,24 +90,36 @@
             display: inline-block;
             transition: all 0.3s ease;
         }
-        
+
         .btn-primary {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
         }
-        
+
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
-        
+
+        .btn-logout {
+            background: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        .btn-logout:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+
         .btn-danger {
             background: #ff4757;
             color: white;
             padding: 8px 16px;
             font-size: 14px;
         }
-        
+
         .btn-danger:hover {
             background: #ee5a6f;
             transform: translateY(-2px);
@@ -85,11 +136,11 @@
             background: #3742fa;
             transform: translateY(-2px);
         }
-        
+
         .todo-list {
             list-style: none;
         }
-        
+
         .todo-item {
             background: #f8f9fa;
             border-radius: 10px;
@@ -100,17 +151,17 @@
             transition: all 0.3s ease;
             border-left: 4px solid #667eea;
         }
-        
+
         .todo-item:hover {
             transform: translateX(5px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .todo-item.done {
             background: #e9ecef;
             border-left-color: #28a745;
         }
-        
+
         .todo-checkbox {
             width: 24px;
             height: 24px;
@@ -118,60 +169,60 @@
             cursor: pointer;
             accent-color: #667eea;
         }
-        
+
         .todo-content {
             flex: 1;
         }
-        
+
         .todo-title {
             font-size: 1.2em;
             font-weight: bold;
             color: #333;
             margin-bottom: 5px;
         }
-        
+
         .todo-item.done .todo-title {
             text-decoration: line-through;
             color: #6c757d;
         }
-        
+
         .todo-description {
             color: #6c757d;
             font-size: 0.95em;
             margin-top: 5px;
         }
-        
+
         .todo-item.done .todo-description {
             text-decoration: line-through;
         }
-        
+
         .todo-meta {
             font-size: 0.85em;
             color: #adb5bd;
             margin-top: 8px;
         }
-        
+
         .todo-actions {
             display: flex;
             gap: 10px;
         }
-        
+
         .empty-state {
             text-align: center;
             padding: 60px 20px;
             color: #6c757d;
         }
-        
+
         .empty-state-icon {
             font-size: 4em;
             margin-bottom: 20px;
         }
-        
+
         .empty-state h2 {
             margin-bottom: 10px;
             color: #495057;
         }
-        
+
         .empty-state p {
             margin-bottom: 20px;
         }
@@ -179,6 +230,17 @@
 </head>
 <body>
     <div class="container">
+        <div class="user-header">
+            <div class="user-info">
+                <div class="user-avatar" th:text="${nickname.substring(0, 1).toUpperCase()}"></div>
+                <div>
+                    <div class="user-nickname" th:text="${nickname} + '님'"></div>
+                    <div class="welcome-text">환영합니다!</div>
+                </div>
+            </div>
+            <a href="/logout" class="btn btn-logout">로그아웃</a>
+        </div>
+
         <h1>📝 Todo List</h1>
         
         <div class="header-actions">
