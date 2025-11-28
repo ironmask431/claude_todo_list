@@ -236,10 +236,6 @@ java -jar build/libs/claude_todo_list-0.0.1-SNAPSHOT.jar
 ./gradlew build --refresh-dependencies
 ```
 
-## 📝 라이선스
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 👤 개발자
 
 개발 문의 및 이슈 리포트는 GitHub Issues를 이용해주세요.
