@@ -1,6 +1,6 @@
 # 📝 Todo List Application
 
-세션 기반 인증을 사용하는 간단하고 우아한 Todo List 웹 애플리케이션입니다.
+클로드 ai로 세션인증 로그인 기반 Todo List 웹 애플리케이션 만들기. 
 
 ## 🛠 기술 스택
 
