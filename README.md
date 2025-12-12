@@ -218,22 +218,16 @@ java -jar build/libs/claude_todo_list-0.0.1-SNAPSHOT.jar
 - Username: `sa`
 - Password: (비워둠)
 
-### Gradle 태스크
-```bash
-# 빌드
-./gradlew build
+### ScreenShot
+<img width="512" height="512" alt="스크린샷 2025-12-13 오전 7 59 54" src="https://github.com/user-attachments/assets/f0b73d38-4e12-4d67-8089-54c4ddca0e44" />
 
-# 테스트 실행
-./gradlew test
+<img width="489" height="606" alt="스크린샷 2025-12-13 오전 8 00 08" src="https://github.com/user-attachments/assets/06d1663d-1e85-4fef-a524-72372588fbb7" />
 
-# 실행
-./gradlew bootRun
+<img width="644" height="676" alt="스크린샷 2025-12-13 오전 8 04 20" src="https://github.com/user-attachments/assets/865dfb47-38c9-49f9-811d-865d9c495c99" />
 
-# 클린 빌드
-./gradlew clean build
+<img width="860" height="609" alt="스크린샷 2025-12-13 오전 8 02 01" src="https://github.com/user-attachments/assets/26bffed1-3499-466b-b1a9-0d085a37cc5e" />
 
-# 의존성 새로고침
-./gradlew build --refresh-dependencies
-```
+<img width="642" height="705" alt="스크린샷 2025-12-13 오전 8 04 27" src="https://github.com/user-attachments/assets/cefe8008-e350-475b-bf1b-e6038cf38e3e" />
+
 
 
