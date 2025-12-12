@@ -236,14 +236,4 @@ java -jar build/libs/claude_todo_list-0.0.1-SNAPSHOT.jar
 ./gradlew build --refresh-dependencies
 ```
 
-## 👤 개발자
 
-개발 문의 및 이슈 리포트는 GitHub Issues를 이용해주세요.
-
-## 🙏 감사의 말
-
-이 프로젝트는 Spring Boot와 Kotlin을 사용한 웹 애플리케이션 학습 목적으로 제작되었습니다.
-
----
-
-⭐ 이 프로젝트가 도움이 되었다면 Star를 눌러주세요!
